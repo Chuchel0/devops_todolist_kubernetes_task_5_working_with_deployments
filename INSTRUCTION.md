@@ -6,8 +6,8 @@ Requires a running cluster, `kubectl`, and metrics-server (needed by the HPA; on
 
 ```
 kubectl create namespace mateapp
-kubectl apply -f deployment.yml
-kubectl apply -f hpa.yml
+kubectl apply -f infrastructure/deployment.yml
+kubectl apply -f infrastructure/hpa.yml
 kubectl get deployment,pods,hpa -n mateapp
 ```
 
